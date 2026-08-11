@@ -3,6 +3,7 @@ import ArticleCard from "@/components/sections/articleSection/ArticleCard";
 import Clients from "@/components/sections/Clients";
 import Community from "@/components/sections/Community";
 import Hero from "@/components/sections/Hero";
+import Testimonials from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Clients/>
         <Community/>
         <ArticleCard/>
+        <Testimonials/>
       </main>
     </>
   );
