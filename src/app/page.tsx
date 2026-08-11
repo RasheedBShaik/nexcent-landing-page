@@ -1,4 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
+import Clients from "@/components/sections/Clients";
+import Community from "@/components/sections/Community";
 import Hero from "@/components/sections/Hero";
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Clients/>
+        <Community/>
       </main>
     </>
   );

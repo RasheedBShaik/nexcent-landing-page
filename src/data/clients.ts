@@ -1,0 +1,23 @@
+export const clientData=[
+    {
+        image:"/client1.png",
+    },
+    {
+        image:"/client2.png",
+    },
+    {
+        image:"/client3.png",
+    },
+    {
+        image:"/client4.png",
+    },
+    {
+        image:"/client5.png",
+    },
+    {
+        image:"/client6.png",
+    },
+    {
+        image:"/client7.png",
+    },
+]
