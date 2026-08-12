@@ -10,20 +10,16 @@ const Navbar = () => {
 
   return (
     <nav className="relative bg-[#F5F7FA]">
-      <div className="mx-auto flex max-w-360 items-center justify-between px-6 py-5.5 lg:px-10">
+      <div className="mx-auto flex max-w-360 items-center justify-between px-6 py-5.5 lg:pr-30 pl-26.25">
         {/* Logo */}
-        <Link href="/" onClick={() => setIsMenuOpen(false)}>
+        <Link className="text-[#263238]" href="/" onClick={() => setIsMenuOpen(false)}>
           <Logo />
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 lg:flex xl:gap-12.5">
           {navigationLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[#18191F]!"
-            >
+            <Link key={link.href} href={link.href} className="text-[#18191F]!">
               {link.label}
             </Link>
           ))}
@@ -31,13 +27,13 @@ const Navbar = () => {
 
         {/* Desktop Auth */}
         <div className="hidden items-center gap-3.5 text-[14px] lg:flex">
-          <Link href="/login" className="text-[#4CAF4F]">
+          <Link href="/login" className="text-[#4CAF4F] px-5 py-2.5">
             Login
           </Link>
 
           <Link
             href="/signup"
-            className="rounded-md bg-[#4CAF4F] px-5 py-2.5 text-white"
+            className="rounded-md bg-[#4CAF4F] hover:bg-[#4acf4f] px-5 py-2.5 text-white"
           >
             Sign up
           </Link>
@@ -51,9 +47,7 @@ const Navbar = () => {
           aria-label="Toggle navigation menu"
           aria-expanded={isMenuOpen}
         >
-          <span className="text-2xl">
-            {isMenuOpen ? "✕" : "☰"}
-          </span>
+          <span className="text-2xl">{isMenuOpen ? "✕" : "☰"}</span>
         </button>
       </div>
 

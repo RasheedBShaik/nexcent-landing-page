@@ -1,3 +1,4 @@
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import ArticleCard from "@/components/sections/articleSection/ArticleCard";
 import Clients from "@/components/sections/Clients";
@@ -18,6 +19,7 @@ export default function Home() {
         <Testimonials/>
         <CommunityUpdates/>
       </main>
+      <Footer/>
     </>
   );
 }

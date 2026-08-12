@@ -24,16 +24,16 @@ export default function Button({
     justify-center
     rounded
     border
-    border-[#4acf4f]
-    bg-[#4acf4f]
+    border-[#4caf4f]
+    bg-[#4caf4f]
     px-8
     py-[14px]
     font-[Inter]
     text-white
     transition-colors
     duration-200
-    hover:border-[#3fba44]
-    hover:bg-[#3fba44]
+    hover:border-[#4acf4f]
+    hover:bg-[#4acf4f]
     disabled:cursor-not-allowed
     disabled:opacity-50
     ${className}

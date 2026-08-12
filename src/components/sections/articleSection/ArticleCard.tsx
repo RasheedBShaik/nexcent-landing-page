@@ -16,7 +16,7 @@ const ArticleCard = () => {
             />
 
             <div className="max-w-150.25">
-              <h2 className="text-[28px] font-semibold leading-tight sm:text-[32px] lg:text-[36px]">
+              <h2 className="text-[28px] pt-12 font-semibold leading-tight sm:text-[32px] lg:text-[36px]">
                 {articles[0].heading}
               </h2>
 
@@ -46,7 +46,7 @@ const ArticleCard = () => {
               />
 
               <div className="max-w-150.25">
-                <h2 className="text-[28px] font-semibold leading-tight sm:text-[32px] lg:text-[36px]">
+                <h2 className="text-[28px] pt-12 font-semibold leading-tight sm:text-[32px] lg:text-[36px]">
                   {article.heading}
                 </h2>
 

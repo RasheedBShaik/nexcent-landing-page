@@ -42,7 +42,7 @@ const CommunityUpdates = () => {
 
                 {/* Read more */}
                 <div className="mt-3 flex items-center justify-center gap-2">
-                  <span className="text-[18px] font-semibold text-[#4CAF4F] sm:text-[20px]">
+                  <span className="text-[18px] font-semibold text-[#4CAF4F] sm:text-[20px] cursor-pointer">
                     Readmore
                   </span>
 

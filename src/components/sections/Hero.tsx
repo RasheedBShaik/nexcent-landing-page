@@ -1,43 +1,35 @@
-import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { heroData } from "@/data/hero";
+import Button from "../ui/Button";
 
 export default function Hero() {
   return (
     <section className="bg-[#F5F7FA]">
       <Container className="flex flex-col items-center">
-        <div className="flex w-full flex-col items-center gap-12 py-12 sm:py-16 md:py-20 lg:flex-row lg:justify-between lg:gap-16 lg:py-24">
+        <div className="flex w-full flex-col items-center gap-12 py-12 sm:py-16 md:py-20 lg:flex-row lg:justify-between lg:gap-16 lg:py-24 ">
           {/* Content */}
           <div className="w-full max-w-2xl text-center lg:text-left">
-            <h1 className="text-4xl font-semibold leading-tight text-[#4D4D4D] sm:text-5xl lg:text-[64px]">
+            <h1 className="text-4xl font-semibold leading-19 text-[#4D4D4D] sm:text-5xl lg:text-[64px]">
               {heroData.title.first}{" "}
               <span className="text-[#4CAF4F]">
                 {heroData.title.highlight}
               </span>
             </h1>
 
-            <p className="mx-auto mt-5 max-w-xl text-[#717171] sm:mt-6 lg:mx-0">
+            <p className="mx-auto mt-4 max-w-xl text-[#717171] sm:mt-6 lg:mx-0">
               {heroData.description}
             </p>
 
-            <Link
-              href={heroData.button.href}
-              className="mt-7 inline-flex rounded-md bg-[#4CAF4F] px-8 py-3.5 text-white sm:mt-8"
-            >
-              {heroData.button.label}
-            </Link>
+            <Button className="mt-8" href="/register">Register</Button>
+
           </div>
 
           {/* Illustration */}
           <div className="w-full max-w-sm sm:max-w-md lg:max-w-100">
-            <Image
+            <img
               src={heroData.image}
               alt={heroData.title.first}
-              width={400}
-              height={400}
-              priority
-              className="h-auto w-full"
+              className="h-101.75 w-full"
             />
           </div>
         </div>
