@@ -41,10 +41,8 @@ const Footer = () => {
             {/* ================= LEFT SIDE ================= */}
             <div className="flex shrink-0 flex-col max-w-87.5">
               {/* Logo */}
-              <Link href="/" aria-label="Nexcent home">
-                <Link href="/" className="text-white">
-                  <FooterLogo />
-                </Link>
+              <Link href="/" aria-label="Nexcent home" className="text-white">
+                <FooterLogo />
               </Link>
 
               {/* Copyright */}
