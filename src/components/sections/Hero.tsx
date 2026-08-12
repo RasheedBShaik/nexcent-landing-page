@@ -6,10 +6,10 @@ export default function Hero() {
   return (
     <section className="bg-[#F5F7FA]">
       <Container className="flex flex-col items-center">
-        <div className="flex w-full flex-col items-center gap-12 py-12 sm:py-16 md:py-20 lg:flex-row lg:justify-between lg:gap-16 lg:py-24 ">
+        <div className="flex w-full flex-col items-center gap-12 py-4 sm:py-16 md:py-20 lg:flex-row lg:justify-between lg:gap-16 lg:py-24 ">
           {/* Content */}
           <div className="w-full max-w-2xl text-center lg:text-left">
-            <h1 className="text-4xl font-semibold leading-19 text-[#4D4D4D] sm:text-5xl lg:text-[64px]">
+            <h1 className="text-4xl font-semibold leading-12 md:leading-19 text-[#4D4D4D] sm:text-5xl lg:text-[64px]">
               {heroData.title.first}{" "}
               <span className="text-[#4CAF4F]">
                 {heroData.title.highlight}
